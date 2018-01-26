@@ -1,0 +1,64 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/relativeLayout_notaFiscalFragment"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@color/plano_de_fundo_layout"
+    >
+
+    <android.support.v4.view.ViewPager
+	android:id="@+id/viewPagerNotaFiscal"
+	android:layout_width="match_parent"
+	android:layout_height="467dp"
+	>
+
+        	<android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagerTabStripNotaFiscal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="top"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/azul_consigaz"
+            android:textSize="20sp" 
+            android:background="@color/tabs"
+            />
+        	
+    </android.support.v4.view.ViewPager>
+    
+        <RelativeLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="50dp"
+        	android:layout_gravity="top"
+        	android:background="@color/plano_de_fundo_layout" 
+        	>
+        
+        	<Button
+        	android:id="@+id/button_listFragmentNotaFiscalItens_menu"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentLeft="true"
+        	android:text="Menu"
+        	android:textColor="#FFFFFF"
+        	android:textSize="30sp"
+        	android:paddingLeft="20dp"
+    		android:paddingRight="20dp"
+        	android:background="@drawable/style_btn_consigaz"
+    		/>
+        
+        	<Button
+        	android:id="@+id/button_listFragmentNotaFiscalItens_adicionarItem"
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentRight="true"
+        	android:text="Adicionar Item"
+        	android:textSize="30sp"
+        	android:textColor="#FFFFFF"
+        	android:paddingLeft="20dp"
+    		android:paddingRight="20dp"
+        	android:background="@drawable/style_btn_consigaz"
+        	/>
+    	</RelativeLayout>  
+</LinearLayout>

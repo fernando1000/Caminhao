@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="vermelho">#FF0000</color>
+    <color name="azul_consigaz">#003D66</color>
+    <color name="tabs">#F2E0AE</color>
+    <color name="divisoria">#95000000</color>
+    <color name="plano_de_fundo_layout">#93B2C6</color>
+    <color name="plano_de_fundo_lista">#DDD4C5</color>
+    <color name="branco">#FFFFFF</color>
+    
+   
+</resources>

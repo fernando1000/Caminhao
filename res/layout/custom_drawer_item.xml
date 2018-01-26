@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/plano_de_fundo_lista"
+    >
+
+      
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@color/tabs"   
+        >
+
+        <TextView
+            android:id="@+id/drawerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/azul_consigaz"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" 
+        android:background="@color/plano_de_fundo_lista"
+        >
+
+        <ImageView
+            android:id="@+id/drawer_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp" 
+            />
+
+        <TextView
+            android:id="@+id/drawer_itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/azul_consigaz" 
+            android:textSize="40sp"
+        	android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/drawer_itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginStart="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFE4C4" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.consigaz.caminhao"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ComunicarActivity"
+            android:label="comunicar_activity" >
+        </activity>
+        <activity
+            android:name=".activity.InicioAtividadeActivity"
+            android:label="InicioAtividadeActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ListaClientesActivity"
+            android:label="ListaClientesActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ListaProdutosActivity"
+            android:label="ListaProdutosActivity" >
+        </activity>
+        <activity
+            android:name=".activity.ListaVendasActivity"
+            android:label="ListaVendasActivity" >
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="LoginActivity" >
+        </activity>
+        <activity
+            android:name=".activity.MenuActivity"
+            android:label="MenuSistemaActivity" >
+        </activity>
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="SplashActivity" >
+        </activity>
+        <activity
+            android:name=".fragmentactivity.ClienteFragmentActivity"
+            android:label="ClienteFragActivity" >
+        </activity>
+        <activity
+            android:name=".fragmentactivity.ConfiguracaoFragmentActivity"
+            android:label="ConfiguracaoFragActivity" >
+        </activity>
+        <activity
+            android:name=".fragmentactivity.VendaFragmentActivity"
+            android:label="VendaFragActivity" >
+        </activity>
+        <activity
+            android:name=".fragmentactivity.ProdutoFragmentActivity"
+            android:label="ProdutoFragActivity" >
+        </activity>
+    </application>
+
+</manifest>
